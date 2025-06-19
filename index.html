@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dhoni's Dev Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+        background: #0a0a0a;
+        color: #f5f5f5;
+        position: relative;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: radial-gradient(#1e1e1e 1px, transparent 1px);
+        background-size: 40px 40px;
+        opacity: 0.05;
+        z-index: -1;
+      }
+
+      header {
+        background: linear-gradient(to right, #1a1a2e, #16213e);
+        padding: 80px 20px 60px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 3rem;
+        color: #facc15;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        margin-top: 10px;
+        color: #a5f3fc;
+      }
+
+      section {
+        padding: 60px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        color: #38bdf8;
+        margin-bottom: 30px;
+        border-left: 5px solid #38bdf8;
+        padding-left: 15px;
+      }
+
+      /* Styles for Life & Education and Achievements */
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(103, 232, 249, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h2 {
+  color: #67e8f9;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.card p,
+.card ul {
+  color: #e2e8f0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style: disc inside;
+}
+
+
+      .edu-container, .achievement-card, .project, .skills ul li {
+        background: #1e1e2f;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .life-education h2, .achievements h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #facc15;
+      }
+
+      .highlight {
+        color: #facc15;
+        font-weight: 600;
+      }
+
+      .skills ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .skills ul li {
+        color: #38bdf8;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      .skills ul li:hover {
+        background: #0ea5e9;
+        color: white;
+      }
+
+      .contact {
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .contact a {
+        display: inline-block;
+        margin: 10px;
+        color: #38bdf8;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      footer {
+        background: #111827;
+        color: #9ca3af;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Dhoni Gupta</h1>
+      <p>Computer Science Student | Designer | Storyteller | Standup Poet</p>
+    </header>
+
+    <!-- Life & Education & Achievements Section -->
+<section class="info-section">
+  <div class="card">
+    <h2>Life & Education</h2>
+    <p>
+      Dhoni Gupta was born and brought up in Ranchi, Jharkhand. He began his
+      educational journey at Kendriya Vidyalaya, where his multidimensional
+      personality started shaping up. Known for his discipline and dedication,
+      Dhoni represented his school
+      <strong>three times at the national level in yoga</strong> and also
+      played <strong>state-level table tennis</strong>.
+    </p>
+    <p>
+      After high school, he pursued a <strong>Diploma in Engineering</strong>,
+      during which he also attended <strong>American Academy</strong>, where he
+      was awarded <em>“Student of the Year”</em> for his communication and
+      leadership abilities. Later, he moved to Chandigarh to pursue a
+      <strong>Bachelor’s degree in Computer Science Engineering</strong> from
+      SVIET.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Achievements</h2>
+    <ul>
+      <li>3× <strong>National Yoga Performer</strong> (KVS, CBSE & Open)</li>
+      <li><strong>State-level Table Tennis Player</strong></li>
+      <li><strong>Student of the Year</strong> at American Academy</li>
+      <li>Selected in elite batch <em>“The Uniques 3.0”</em> at SVIET</li>
+      <li>Represented in hackathons like <strong>Bharat Tech 2.0</strong></li>
+    </ul>
+  </div>
+</section>
+
+
+    <section class="skills">
+      <h2 class="section-title">💡 Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Tailwind</li>
+        <li>JavaScript</li>
+        <li>Figma</li>
+        <li>Canva</li>
+        <li>Poetry Writing</li>
+        <li>Public Speaking</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2 class="section-title">🧩 Projects</h2>
+      <div class="project">
+        <h3>MediLink</h3>
+        <p>A health-tech platform for storing and accessing medical history via cloud & QR.</p>
+      </div>
+      <div class="project">
+        <h3>Rentify</h3>
+        <p>A rental connector platform for flat/shop/room listings with smart filters.</p>
+      </div>
+      <div class="project">
+        <h3>Wirely</h3>
+        <p>Smart repair & IT services—CCTV, networking, accessories delivery, and installation.</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2 class="section-title">📬 Contact</h2>
+      <p>Let’s connect and create something impactful!</p>
+      <a href="mailto:youremail@example.com">Email</a>
+      <a href="https://instagram.com/designloop.in">Instagram</a>
+      <a href="https://www.linkedin.com/in/yourname/">LinkedIn</a>
+    </section>
+
+    <footer>
+      &copy; 2025 Dhoni Gupta | All rights reserved.
+    </footer>
+  </body>
+</html>
